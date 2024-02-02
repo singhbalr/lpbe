@@ -1,0 +1,1 @@
+DROP INDEX menus_restaurant_id_idx;

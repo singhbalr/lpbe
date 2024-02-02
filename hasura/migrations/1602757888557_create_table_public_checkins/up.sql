@@ -1,0 +1,2 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE TABLE "public"."checkins"("id" uuid NOT NULL DEFAULT gen_random_uuid(), "user_id" text NOT NULL, "restaurant_id" uuid NOT NULL, "location" geography NOT NULL, "point_transaction_id" uuid NOT NULL, "extras" jsonb NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") , FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE restrict ON DELETE cascade, FOREIGN KEY ("point_transaction_id") REFERENCES "public"."point_transactions"("id") ON UPDATE restrict ON DELETE cascade);

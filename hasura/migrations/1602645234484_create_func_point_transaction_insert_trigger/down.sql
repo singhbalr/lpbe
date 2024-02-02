@@ -1,0 +1,1 @@
+DROP FUNCTION insert_transaction_insert_trigger;

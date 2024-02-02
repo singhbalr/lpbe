@@ -1,0 +1,15 @@
+{
+  "public": "./public",
+  "directoryListing": false,
+  "headers": [
+    {
+      "source": ".well-known/*",
+      "headers": [
+        {
+          "key": "Content-type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ]
+}

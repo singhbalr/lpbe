@@ -1,0 +1,8 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: app
+  annotations:
+    custom-hostname: app
+  labels:
+    app: prod

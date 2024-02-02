@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.schmatz_client",
+      "sha256_cert_fingerprints": [
+        "E5:88:E9:10:C3:52:9E:25:10:D2:61:48:D0:71:D6:D8:9C:6B:C2:5F:CF:86:94:4A:08:E3:D9:0B:B1:F5:1F:78"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.schmatz.loyaltypoint",
+      "sha256_cert_fingerprints": [
+        "37:A6:21:73:B2:7A:DE:54:B3:48:9A:50:4F:AE:53:30:06:96:B0:D6:EA:EB:2F:C2:66:D3:30:1C:34:8F:E2:2A"
+      ]
+    }
+  }
+]

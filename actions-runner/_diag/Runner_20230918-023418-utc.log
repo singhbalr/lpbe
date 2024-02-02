@@ -1,0 +1,170 @@
+[2023-09-18 02:34:18Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'Credentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'Runner': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner'
+[2023-09-18 02:34:18Z INFO Listener] Runner is built for OSX (Arm64) - osx-arm64.
+[2023-09-18 02:34:18Z INFO Listener] RuntimeInformation: Darwin 21.6.0 Darwin Kernel Version 21.6.0: Mon Aug 22 20:20:05 PDT 2022; root:xnu-8020.140.49~2/RELEASE_ARM64_T8101.
+[2023-09-18 02:34:18Z INFO Listener] Version: 2.309.0
+[2023-09-18 02:34:18Z INFO Listener] Commit: bdfef345577cb66994787a4166e717744da6379f
+[2023-09-18 02:34:18Z INFO Listener] Culture: en-PH
+[2023-09-18 02:34:18Z INFO Listener] UI Culture: en-PH
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO Listener] Validating directory permissions for: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO CommandLineParser] Parse
+[2023-09-18 02:34:18Z INFO CommandLineParser] Parsing 1 args
+[2023-09-18 02:34:18Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:34:18Z INFO CommandLineParser] HasArgs: False
+[2023-09-18 02:34:18Z INFO CommandLineParser] Adding Command: run
+[2023-09-18 02:34:18Z INFO Listener] Arguments parsed
+[2023-09-18 02:34:18Z INFO Runner] ExecuteCommand
+[2023-09-18 02:34:18Z INFO ConfigurationStore] currentAssemblyLocation: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin/Runner.Listener.dll
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] binPath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] RootFolder: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'Runner': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] ConfigFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'Credentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] CredFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_migrated'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] MigratedCredFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_migrated
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'Service': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.service'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.service
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'help': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'version': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'check': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Command 'configure': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Command 'remove': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-09-18 02:34:18Z INFO ConfigurationManager] LoadSettings
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured()
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-18 02:34:18Z INFO ConfigurationManager] Is configured: True
+[2023-09-18 02:34:18Z INFO ConfigurationStore] Read setting file: 316 chars
+[2023-09-18 02:34:18Z INFO ConfigurationManager] Settings Loaded
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-18 02:34:18Z INFO CommandSettings] Command 'run': 'True'
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured()
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-18 02:34:18Z INFO ConfigurationManager] Is configured: True
+[2023-09-18 02:34:18Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-09-18 02:34:18Z INFO Runner] Set runner startup type - Manual
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'once': 'False'
+[2023-09-18 02:34:18Z INFO CommandSettings] Flag 'once': 'False'
+[2023-09-18 02:34:18Z INFO Runner] RunAsync
+[2023-09-18 02:34:18Z INFO ConfigurationManager] LoadSettings
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured()
+[2023-09-18 02:34:18Z INFO ConfigurationStore] IsConfigured: True
+[2023-09-18 02:34:18Z INFO ConfigurationManager] Is configured: True
+[2023-09-18 02:34:18Z INFO ConfigurationManager] Settings Loaded
+[2023-09-18 02:34:18Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "Rajwinders-MacBook-Air",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/odziMXYThu8EN3Q1a7BEBCYQYyv2jw56eYQga4B9vy2eQyh4JV/",
+  "GitHubUrl": "https://github.com/kaiser-kitchen/loyalty-point-backend",
+  "WorkFolder": "_work"
+}
+[2023-09-18 02:34:18Z INFO MessageListener] Loading Credentials
+[2023-09-18 02:34:18Z INFO ConfigurationStore] HasCredentials()
+[2023-09-18 02:34:18Z INFO ConfigurationStore] stored True
+[2023-09-18 02:34:18Z INFO CredentialManager] GetCredentialProvider
+[2023-09-18 02:34:18Z INFO CredentialManager] Creating type OAuth
+[2023-09-18 02:34:18Z INFO CredentialManager] Creating credential type: OAuth
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:18Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:18Z INFO HostContext] Well known config file 'RSACredentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams'
+[2023-09-18 02:34:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:18Z INFO MessageListener] Attempt to create session.
+[2023-09-18 02:34:18Z INFO MessageListener] Connecting to the Runner Server...
+[2023-09-18 02:34:18Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:18Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-09-18 02:34:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:18Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:18Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:34:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:18Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:18Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:34:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:19Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:19Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:19Z INFO MessageListener] VssConnection created
+[2023-09-18 02:34:19Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:19Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-09-18 02:34:20Z INFO MessageListener] Session created.
+[2023-09-18 02:34:20Z INFO Terminal] WRITE LINE: Current runner version: '2.309.0'
+[2023-09-18 02:34:20Z INFO Terminal] WRITE LINE: 2023-09-18 02:34:20Z: Listening for Jobs
+[2023-09-18 02:34:20Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-09-18 02:36:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:36:53Z INFO MessageListener] Message '1' received from session '7f9d021c-1aef-4cf8-9877-031c286e8e06'.
+[2023-09-18 02:36:53Z INFO Runner] Received job message of length 36986 from service, with hash '6d8044265c7d9292b72001aaa487d4042cceda5913d7815914ea16328000384c'
+[2023-09-18 02:36:53Z INFO JobDispatcher] Job request 13 for plan e6c50769-0f6a-43d4-b2a9-c475bae66dd5 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2023-09-18 02:36:53Z INFO JobDispatcher] Pull OrchestrationId e6c50769-0f6a-43d4-b2a9-c475bae66dd5.build.__default from JWT claims
+[2023-09-18 02:36:53Z INFO Terminal] WRITE LINE: 2023-09-18 02:36:53Z: Running job: Build, Push and Deploy
+[2023-09-18 02:36:53Z INFO JobDispatcher] Start renew job request 13 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2023-09-18 02:36:54Z INFO JobDispatcher] Successfully renew job request 13, job is valid till 9/18/2023 2:46:53 AM
+[2023-09-18 02:36:54Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper] Starting process:
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   File name: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin/Runner.Worker'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 109 112'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Working directory: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-09-18 02:36:54Z INFO ProcessInvokerWrapper] Process started with process id 74022, waiting for process exit.
+[2023-09-18 02:36:54Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2023-09-18 02:36:54Z INFO ProcessChannel] Sending message of length 36986, with hash '6d8044265c7d9292b72001aaa487d4042cceda5913d7815914ea16328000384c'
+[2023-09-18 02:36:54Z INFO JobNotification] Entering JobStarted Notification
+[2023-09-18 02:36:54Z INFO JobNotification] Entering StartMonitor
+[2023-09-18 02:37:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:37:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:37:26Z INFO ProcessInvokerWrapper] Finished process 74022 with exit code 102, and elapsed time 00:00:32.5074364.
+[2023-09-18 02:37:26Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2023-09-18 02:37:26Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2023-09-18 02:37:26Z INFO Terminal] WRITE LINE: 2023-09-18 02:37:26Z: Job Build, Push and Deploy completed with result: Failed
+[2023-09-18 02:37:26Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2023-09-18 02:37:26Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 13.
+[2023-09-18 02:37:26Z INFO JobNotification] Entering JobCompleted Notification
+[2023-09-18 02:37:26Z INFO JobNotification] Entering EndMonitor
+[2023-09-18 02:37:50Z INFO Terminal] WRITE LINE: Exiting...
+[2023-09-18 02:37:50Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-18 02:37:50Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-18 02:37:50Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-09-18 02:37:50Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/odziMXYThu8EN3Q1a7BEBCYQYyv2jw56eYQga4B9vy2eQyh4JV/_apis/distributedtask/pools/1/messages?sessionId=7f9d021c-1aef-4cf8-9877-031c286e8e06&lastMessageId=1&status=Online&runnerVersion=2.309.0 has been cancelled.
+[2023-09-18 02:37:50Z INFO MessageListener] Get next message has been cancelled.
+[2023-09-18 02:37:50Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2023-09-18 02:37:50Z INFO JobDispatcher] Ensure WorkerDispather for job ca395085-040a-526b-2ce8-bdc85f692774 run to finish, cancel any running job.
+[2023-09-18 02:37:50Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2023-09-18 02:37:51Z INFO Terminal] WRITE LINE: Exiting...
+[2023-09-18 02:37:51Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-18 02:37:51Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-18 02:37:51Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-09-18 02:37:51Z INFO Terminal] WRITE LINE: Exiting...
+[2023-09-18 02:37:51Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-09-18 02:37:51Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-09-18 02:37:51Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-09-18 02:37:51Z INFO Listener] Runner execution been cancelled.

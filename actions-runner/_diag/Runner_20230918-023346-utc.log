@@ -1,0 +1,220 @@
+[2023-09-18 02:33:46Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'Credentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'Runner': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner'
+[2023-09-18 02:33:46Z INFO Listener] Runner is built for OSX (Arm64) - osx-arm64.
+[2023-09-18 02:33:46Z INFO Listener] RuntimeInformation: Darwin 21.6.0 Darwin Kernel Version 21.6.0: Mon Aug 22 20:20:05 PDT 2022; root:xnu-8020.140.49~2/RELEASE_ARM64_T8101.
+[2023-09-18 02:33:46Z INFO Listener] Version: 2.309.0
+[2023-09-18 02:33:46Z INFO Listener] Commit: bdfef345577cb66994787a4166e717744da6379f
+[2023-09-18 02:33:46Z INFO Listener] Culture: en-PH
+[2023-09-18 02:33:46Z INFO Listener] UI Culture: en-PH
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO Listener] Validating directory permissions for: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO CommandLineParser] Parse
+[2023-09-18 02:33:46Z INFO CommandLineParser] Parsing 5 args
+[2023-09-18 02:33:46Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:33:46Z INFO CommandLineParser] HasArgs: False
+[2023-09-18 02:33:46Z INFO CommandLineParser] Adding Command: configure
+[2023-09-18 02:33:46Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:33:46Z INFO CommandLineParser] HasArgs: True
+[2023-09-18 02:33:46Z INFO CommandLineParser] arg: url
+[2023-09-18 02:33:46Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:33:46Z INFO CommandLineParser] HasArgs: True
+[2023-09-18 02:33:46Z INFO CommandLineParser] Adding option 'url': 'https://github.com/kaiser-kitchen/loyalty-point-backend'
+[2023-09-18 02:33:46Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:33:46Z INFO CommandLineParser] HasArgs: True
+[2023-09-18 02:33:46Z INFO CommandLineParser] arg: token
+[2023-09-18 02:33:46Z INFO CommandLineParser] parsing argument
+[2023-09-18 02:33:46Z INFO CommandLineParser] HasArgs: True
+[2023-09-18 02:33:46Z INFO CommandLineParser] Adding option 'token': '***'
+[2023-09-18 02:33:46Z INFO Listener] Arguments parsed
+[2023-09-18 02:33:46Z INFO Runner] ExecuteCommand
+[2023-09-18 02:33:46Z INFO ConfigurationStore] currentAssemblyLocation: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin/Runner.Listener.dll
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] binPath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] RootFolder: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'Runner': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] ConfigFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.runner
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'Credentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] CredFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_migrated'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] MigratedCredFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_migrated
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:46Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:46Z INFO HostContext] Well known config file 'Service': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.service'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.service
+[2023-09-18 02:33:46Z INFO CommandSettings] Flag 'help': 'False'
+[2023-09-18 02:33:46Z INFO CommandSettings] Flag 'version': 'False'
+[2023-09-18 02:33:46Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-09-18 02:33:46Z INFO CommandSettings] Flag 'check': 'False'
+[2023-09-18 02:33:46Z INFO CommandSettings] Command 'configure': 'True'
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE: |                       
+[2023-09-18 02:33:46Z INFO Terminal] WRITE: Self-hosted runner registration
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE:                         |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-09-18 02:33:46Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-09-18 02:33:46Z INFO ConfigurationManager] ConfigureAsync
+[2023-09-18 02:33:46Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2023-09-18 02:33:46Z INFO ConfigurationStore] IsConfigured()
+[2023-09-18 02:33:46Z INFO ConfigurationStore] IsConfigured: False
+[2023-09-18 02:33:46Z INFO ConfigurationManager] Is configured: False
+[2023-09-18 02:33:46Z INFO CommandSettings] Arg 'url': 'https://github.com/kaiser-kitchen/loyalty-point-backend'
+[2023-09-18 02:33:46Z INFO CommandSettings] Remove url from Arg dictionary.
+[2023-09-18 02:33:46Z INFO CommandSettings] Arg 'token': '***'
+[2023-09-18 02:33:46Z INFO CommandSettings] Remove token from Arg dictionary.
+[2023-09-18 02:33:47Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (9868:605F:18055F1:1910D9A:6507B70A)
+[2023-09-18 02:33:47Z INFO ConfigurationManager] Using V2 flow: False
+[2023-09-18 02:33:47Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2023-09-18 02:33:47Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:33:47Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-09-18 02:33:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:33:47Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:33:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:33:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:33:47Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:33:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:33:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:33:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:33:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:33:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:33:50Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:33:50Z INFO ConfigurationManager] Test Connection complete.
+[2023-09-18 02:33:50Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:50Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:50Z INFO HostContext] Well known config file 'RSACredentials': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams'
+[2023-09-18 02:33:50Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2023-09-18 02:33:50Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:33:50Z INFO RSAFileKeyManager] Which: 'chmod'
+[2023-09-18 02:33:50Z INFO RSAFileKeyManager] Location: '/bin/chmod'
+[2023-09-18 02:33:50Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:33:50Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper] Starting process:
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Arguments: '600 /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Working directory: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper] Process started with process id 73670, waiting for process exit.
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:33:50Z INFO ProcessInvokerWrapper] Finished process 73670 with exit code 0, and elapsed time 00:00:00.0589288.
+[2023-09-18 02:33:50Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:33:50Z INFO CommandSettings] Arg 'runnergroup': ''
+[2023-09-18 02:33:50Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-09-18 02:33:50Z INFO PromptManager] ReadValue
+[2023-09-18 02:33:50Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2023-09-18 02:33:50Z INFO Terminal] WRITE: [press Enter for Default] 
+[2023-09-18 02:33:50Z INFO Terminal] READ LINE
+[2023-09-18 02:34:00Z INFO Terminal] Read value: ''
+[2023-09-18 02:34:00Z INFO PromptManager] Falling back to the default: 'Default'
+[2023-09-18 02:34:00Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:00Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2023-09-18 02:34:00Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-09-18 02:34:00Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-09-18 02:34:00Z INFO CommandSettings] Arg 'name': ''
+[2023-09-18 02:34:00Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-09-18 02:34:00Z INFO PromptManager] ReadValue
+[2023-09-18 02:34:00Z INFO Terminal] WRITE: Enter the name of runner: 
+[2023-09-18 02:34:00Z INFO Terminal] WRITE: [press Enter for Rajwinders-MacBook-Air] 
+[2023-09-18 02:34:00Z INFO Terminal] READ LINE
+[2023-09-18 02:34:03Z INFO Terminal] Read value: ''
+[2023-09-18 02:34:03Z INFO PromptManager] Falling back to the default: 'Rajwinders-MacBook-Air'
+[2023-09-18 02:34:03Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:03Z INFO CommandSettings] Arg 'labels': ''
+[2023-09-18 02:34:03Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-09-18 02:34:03Z INFO PromptManager] ReadValue
+[2023-09-18 02:34:03Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'macOS', 'ARM64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2023-09-18 02:34:03Z INFO Terminal] WRITE: [press Enter to skip] 
+[2023-09-18 02:34:03Z INFO Terminal] READ LINE
+[2023-09-18 02:34:08Z INFO Terminal] Read value: ''
+[2023-09-18 02:34:08Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:09Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-09-18 02:34:09Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2023-09-18 02:34:09Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-09-18 02:34:09Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-09-18 02:34:09Z INFO ConfigurationStore] Saving OAuth credential @ /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials
+[2023-09-18 02:34:09Z INFO ConfigurationStore] Credentials Saved.
+[2023-09-18 02:34:09Z INFO ConfigurationStore] HasCredentials()
+[2023-09-18 02:34:09Z INFO ConfigurationStore] stored True
+[2023-09-18 02:34:09Z INFO CredentialManager] GetCredentialProvider
+[2023-09-18 02:34:09Z INFO CredentialManager] Creating type OAuth
+[2023-09-18 02:34:09Z INFO CredentialManager] Creating credential type: OAuth
+[2023-09-18 02:34:09Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:09Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:09Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-09-18 02:34:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:09Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:34:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:09Z INFO RunnerServer] EstablishVssConnection
+[2023-09-18 02:34:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-09-18 02:34:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-09-18 02:34:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-09-18 02:34:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/.credentials_rsaparams
+[2023-09-18 02:34:11Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-09-18 02:34:11Z INFO CommandSettings] Arg 'work': ''
+[2023-09-18 02:34:11Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-09-18 02:34:11Z INFO PromptManager] ReadValue
+[2023-09-18 02:34:11Z INFO Terminal] WRITE: Enter name of work folder: 
+[2023-09-18 02:34:11Z INFO Terminal] WRITE: [press Enter for _work] 
+[2023-09-18 02:34:11Z INFO Terminal] READ LINE
+[2023-09-18 02:34:14Z INFO Terminal] Read value: ''
+[2023-09-18 02:34:14Z INFO PromptManager] Falling back to the default: '_work'
+[2023-09-18 02:34:14Z INFO ConfigurationStore] Saving runner settings.
+[2023-09-18 02:34:14Z INFO ConfigurationStore] Settings Saved.
+[2023-09-18 02:34:14Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:14Z INFO Terminal] WRITE LINE: 
+[2023-09-18 02:34:14Z INFO OsxServiceControlManager] Service name 'actions.runner.kaiser-kitchen-loyalty-point-backend.Rajwinders-MacBook-Air' display name 'GitHub Actions Runner (kaiser-kitchen-loyalty-point-backend.Rajwinders-MacBook-Air)' will be used for service configuration.
+[2023-09-18 02:34:14Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:14Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:14Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:14Z INFO HostContext] Well known directory 'Bin': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/bin'
+[2023-09-18 02:34:14Z INFO HostContext] Well known directory 'Root': '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:14Z INFO UnixUtil] Which: 'chmod'
+[2023-09-18 02:34:14Z INFO UnixUtil] Location: '/bin/chmod'
+[2023-09-18 02:34:14Z INFO UnixUtil] Running /bin/chmod 755 "/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/svc.sh"
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper] Starting process:
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Arguments: '755 "/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner/svc.sh"'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Working directory: '/Users/rajwindersinghbal/Documents/GitHub/loyalty-point-backend/actions-runner'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper] Process started with process id 73757, waiting for process exit.
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-09-18 02:34:14Z INFO ProcessInvokerWrapper] Finished process 73757 with exit code 0, and elapsed time 00:00:00.0711607.
+[2023-09-18 02:34:14Z INFO Listener] Runner execution has finished with return code 0

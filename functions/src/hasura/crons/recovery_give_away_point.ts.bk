@@ -1,0 +1,94 @@
+import {Response, Request} from 'express';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import R from 'ramda';
+import GraphqlAdmin from '../../libs/graphql-admin';
+import COUNT_USERS_NO_CHECK_IN from '../../schemas/count_users_no_check_in';
+import GET_USERS_NO_CHECK_IN from '../../schemas/get_users_no_check_in';
+import INSERT_MANY_POINT_TRANSACTIONS from '../../schemas/insert_many_point_transactions';
+import {TransactionType, InsertPointTransactionVars} from '../../schemas/model';
+
+dayjs.extend(utc);
+
+interface Transactions {
+  amount: number;
+}
+
+interface UserNoCheckIn {
+  id: string;
+  point_transactions: Transactions[];
+}
+
+interface ListUser {
+  users: UserNoCheckIn[];
+}
+
+interface InputVars {
+  objects: InsertPointTransactionVars[];
+}
+
+interface OutputInsert {
+  insert_point_transactions: {
+    affected_rows: number;
+  };
+}
+
+const recoveryPoint = async (date: string, limit: number) => {
+  try {
+    const result = await GraphqlAdmin.request<ListUser>(GET_USERS_NO_CHECK_IN, {
+      date,
+      limit,
+    });
+
+    if (result.users.length > 0) {
+      const list = R.reject((o: UserNoCheckIn) =>
+        R.isEmpty(o.point_transactions)
+      )(result.users).map<InsertPointTransactionVars>(x => ({
+        amount: x.point_transactions[0].amount * -1,
+        type_id: TransactionType.INSTALL,
+        user_id: x.id,
+      }));
+      const {insert_point_transactions} = await GraphqlAdmin.request<
+        OutputInsert,
+        InputVars
+      >(INSERT_MANY_POINT_TRANSACTIONS, {
+        objects: list,
+      });
+      return insert_point_transactions.affected_rows;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+  return 0;
+};
+
+export default async (req: Request, res: Response) => {
+  const numDaysToRecoveryGiveaway =
+    process.env.NUM_DAYS_TO_RECOVERY_GIVEAWAY || 14;
+  const date = dayjs
+    .utc()
+    .subtract(+numDaysToRecoveryGiveaway, 'day')
+    .toISOString();
+  const result = await GraphqlAdmin.request(COUNT_USERS_NO_CHECK_IN, {
+    date: date,
+  });
+
+  const limit = 100;
+
+  if (result && result.users_aggregate) {
+    const count = result.users_aggregate.aggregate.count;
+    if (count > 0) {
+      let countSuccess = 0;
+      const loop = Math.ceil(count / limit);
+      for (let i = 0; i < loop; i++) {
+        countSuccess = countSuccess + (await recoveryPoint(date, limit));
+      }
+      console.log('affected_users', countSuccess);
+      return res.json({message: 'OK', affected_users: countSuccess});
+    }
+  }
+
+  console.log('date', date);
+  return res.json({message: 'OK', affected_users: 0});
+};

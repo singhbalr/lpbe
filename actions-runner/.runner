@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "Rajwinders-MacBook-Air",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/odziMXYThu8EN3Q1a7BEBCYQYyv2jw56eYQga4B9vy2eQyh4JV/",
+  "gitHubUrl": "https://github.com/kaiser-kitchen/loyalty-point-backend",
+  "workFolder": "_work"
+}

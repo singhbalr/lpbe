@@ -1,0 +1,1 @@
+DROP TRIGGER point_transaction_insert_trigger ON public.point_transactions;

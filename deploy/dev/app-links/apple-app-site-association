@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["654A38355V.com.schmatz.loyaltypoint"],
+        "Components": [
+          {
+	          "/": "/verify/*"
+	        }
+        ]
+      }
+    ]
+  }
+}

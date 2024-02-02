@@ -1,0 +1,45 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: app
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "1"
+    spec:
+      containers:
+        - image: app
+          readinessProbe:
+            httpGet:
+              path: /healthz
+          resources:
+            limits:
+              memory: "100Mi"
+              cpu: "60m"
+            requests:
+              memory: "60Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+          volumeMounts:
+            - name: app-links-android-vl
+              mountPath: /app/public/.well-known/assetlinks.json
+              subPath: assetlinks.json
+            - name: app-links-ios-vl
+              mountPath: /app/public/.well-known/apple-app-site-association
+              subPath: apple-app-site-association
+      volumes:
+        - name: app-links-android-vl
+          configMap:
+            name: app-links
+            items:
+              - key: assetlinks.json
+                path: assetlinks.json
+        - name: app-links-ios-vl
+          configMap:
+            name: app-links
+            items:
+              - key: apple-app-site-association
+                path: apple-app-site-association

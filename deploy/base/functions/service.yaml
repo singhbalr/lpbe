@@ -1,0 +1,85 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: functions
+  labels:
+    app: functions
+    serving.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "10"
+        autoscaling.knative.dev/target: "1000"
+        autoscaling.knative.dev/class: "kpa.autoscaling.knative.dev"
+        konghq.com/plugins: local-rate-limit
+    spec:
+      containers:
+        - image: functions
+          imagePullPolicy: Always
+          readinessProbe:
+            httpGet:
+              path: /healthz
+          env:
+            - name: HASURA_GRAPHQL_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: hasura-configs
+                  key: HASURA_GRAPHQL_URL
+            - name: HASURA_GRAPHQL_ADMIN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: hasura-secrets
+                  key: HASURA_GRAPHQL_ADMIN_SECRET
+            - name: POINT_GIVEAWAY_INSTALL
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: POINT_GIVEAWAY_INSTALL
+            - name: NUM_DAYS_TO_RECOVERY_GIVEAWAY
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: NUM_DAYS_TO_RECOVERY_GIVEAWAY
+            - name: NUM_DAYS_TO_ROLLBACK_RANK
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: NUM_DAYS_TO_ROLLBACK_RANK
+            - name: POINT_CHECKIN
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: POINT_CHECKIN
+            - name: AWS_REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: AWS_REGION
+            - name: AWS_USER_POOL_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: AWS_USER_POOL_ID
+            - name: LAMBDA_FUNC_SEND_EMAIL_WELCOME
+              valueFrom:
+                configMapKeyRef:
+                  name: loyalty-configs
+                  key: LAMBDA_FUNC_SEND_EMAIL_WELCOME
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+            requests:
+              memory: "128Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          volumeMounts:
+            - name: aws-credentials-volume
+              mountPath: /root/.aws/
+      volumes:
+        - name: aws-credentials-volume
+          secret:
+            secretName: aws-credentials

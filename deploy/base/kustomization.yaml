@@ -1,0 +1,29 @@
+bases:
+  - kong/
+  - hasura/
+  - functions/
+  - app/
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+  - name: loyalty-configs
+    literals:
+      - AWS_REGION=
+      - AWS_USER_POOL_ID=
+      - POINT_GIVEAWAY_INSTALL=5
+      - NUM_DAYS_TO_RECOVERY_GIVEAWAY=30
+      - POINT_CHECKIN=1
+      - LAMBDA_FUNC_SEND_EMAIL_WELCOME=
+  - name: app-links
+
+secretGenerator:
+  - name: aws-credentials
+# configMapGenerator:
+#   - name: storage-configs
+#     literals:
+#       - STORAGE_ENDPOINT=
+#       - STORAGE_BUCKET_NAME=
+#       - STORAGE_ACCESS_KEY=
+#       - STORAGE_SECRET_KEY=

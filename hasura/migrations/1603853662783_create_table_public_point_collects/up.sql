@@ -1,0 +1,2 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE TABLE "public"."point_collects"("id" uuid NOT NULL DEFAULT gen_random_uuid(), "point_shares_id" uuid NOT NULL, "point_transactions_id" uuid NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") , FOREIGN KEY ("point_shares_id") REFERENCES "public"."point_shares"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("point_transactions_id") REFERENCES "public"."point_transactions"("id") ON UPDATE restrict ON DELETE restrict);

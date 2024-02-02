@@ -1,0 +1,2 @@
+INSERT INTO public.menus (id, restaurant_id, created_at, updated_at, type_id, extras) VALUES ('cbdf5342-ead9-4c8e-89be-76b0cb378fe0', 'e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', '2020-10-19 03:01:12.428438+00', '2020-10-19 03:01:12.428438+00', 'FOOD', NULL);
+INSERT INTO public.menus (id, restaurant_id, created_at, updated_at, type_id, extras) VALUES ('1e1334cd-3618-41d5-9cdb-ac031ef3ff5a', 'e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', '2020-10-19 03:12:22.132899+00', '2020-10-19 03:12:22.132899+00', 'DRINK', NULL);

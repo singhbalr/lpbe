@@ -1,0 +1,10 @@
+- name: auto_remove_rank_point
+  webhook: '{{FUNCTIONS_URL}}'
+  schedule: '*/5 * * * *'
+  include_in_metadata: true
+  payload: {}
+  retry_conf:
+    num_retries: 3
+    timeout_seconds: 120
+    tolerance_seconds: 21600
+    retry_interval_seconds: 10

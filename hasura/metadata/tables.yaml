@@ -1,0 +1,612 @@
+- table:
+    schema: public
+    name: answers
+  object_relationships:
+  - name: question
+    using:
+      foreign_key_constraint_on: question_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - question_id
+      - title
+      - is_correct
+      filter:
+        question:
+          is_active:
+            _eq: true
+- table:
+    schema: public
+    name: checkins
+  object_relationships:
+  - name: point_transaction
+    using:
+      foreign_key_constraint_on: point_transaction_id
+  - name: restaurant
+    using:
+      foreign_key_constraint_on: restaurant_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - created_at
+      - id
+      - location
+      - point_transaction_id
+      - restaurant_id
+      filter:
+        user_id:
+          _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: exchange_products
+  object_relationships:
+  - name: exchange
+    using:
+      foreign_key_constraint_on: exchange_id
+  - name: exchange_type
+    using:
+      foreign_key_constraint_on: exchange_type_id
+  - name: product
+    using:
+      foreign_key_constraint_on: product_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - amount
+      - created_at
+      - exchange_id
+      - exchange_type_id
+      - extras
+      - id
+      - product_id
+      filter:
+        exchange:
+          user_id:
+            _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: exchange_types
+  is_enum: true
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: exchanges
+  object_relationships:
+  - name: point_transaction
+    using:
+      foreign_key_constraint_on: point_transaction_id
+  - name: restaurant
+    using:
+      foreign_key_constraint_on: restaurant_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id
+  array_relationships:
+  - name: products
+    using:
+      foreign_key_constraint_on:
+        column: exchange_id
+        table:
+          schema: public
+          name: exchange_products
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - created_at
+      - id
+      - point_transaction_id
+      - restaurant_id
+      - total_points
+      - updated_at
+      - user_id
+      filter:
+        user_id:
+          _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: genders
+  is_enum: true
+  select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+      - id
+      filter: {}
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: menu_types
+  is_enum: true
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: menus
+  object_relationships:
+  - name: restaurant_type
+    using:
+      foreign_key_constraint_on: restaurant_type_id
+  - name: type
+    using:
+      foreign_key_constraint_on: type_id
+  array_relationships:
+  - name: products
+    using:
+      foreign_key_constraint_on:
+        column: menu_id
+        table:
+          schema: public
+          name: products
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - created_at
+      - updated_at
+      - type_id
+      - extras
+      - restaurant_type_id
+      filter: {}
+- table:
+    schema: public
+    name: point_collects
+  object_relationships:
+  - name: point_share
+    using:
+      foreign_key_constraint_on: point_shares_id
+  - name: point_transaction
+    using:
+      foreign_key_constraint_on: point_transactions_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - point_shares_id
+      - point_transactions_id
+      - created_at
+      filter:
+        point_transaction:
+          user_id:
+            _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: point_shares
+  object_relationships:
+  - name: restaurant
+    using:
+      foreign_key_constraint_on: restaurant_id
+  array_relationships:
+  - name: point_collects
+    using:
+      foreign_key_constraint_on:
+        column: point_shares_id
+        table:
+          schema: public
+          name: point_collects
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - restaurant_id
+      - balance
+      - points
+      - created_at
+      - updated_at
+      filter: {}
+      limit: 1
+- table:
+    schema: public
+    name: point_transactions
+  object_relationships:
+  - name: type
+    using:
+      foreign_key_constraint_on: type_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id
+  array_relationships:
+  - name: checkins
+    using:
+      foreign_key_constraint_on:
+        column: point_transaction_id
+        table:
+          schema: public
+          name: checkins
+  - name: exchanges
+    using:
+      foreign_key_constraint_on:
+        column: point_transaction_id
+        table:
+          schema: public
+          name: exchanges
+  - name: point_collects
+    using:
+      foreign_key_constraint_on:
+        column: point_transactions_id
+        table:
+          schema: public
+          name: point_collects
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - user_id
+      - before_balance
+      - after_balance
+      - amount
+      - type_id
+      - created_at
+      - updated_at
+      filter:
+        user_id:
+          _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: points
+  object_relationships:
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - user_id
+      - balance
+      - total_earnings
+      - total_exchange
+      - created_at
+      - updated_at
+      filter:
+        user_id:
+          _eq: X-Hasura-User-Id
+  event_triggers:
+  - name: auto_upgrade_rank_from_points
+    definition:
+      enable_manual: true
+      insert:
+        columns: '*'
+      update:
+        columns:
+        - balance
+        - total_earnings
+        - total_exchange
+        - user_id
+        - created_at
+        - updated_at
+        - id
+    retry_conf:
+      num_retries: 3
+      interval_sec: 60
+      timeout_sec: 60
+    webhook_from_env: FUNCTIONS_URL
+- table:
+    schema: public
+    name: products
+  object_relationships:
+  - name: menu
+    using:
+      foreign_key_constraint_on: menu_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - created_at
+      - exchange_point
+      - id
+      - image
+      - is_exchange_ambassador
+      - is_exchange_bonus_install
+      - is_exchange_install
+      - is_exchange_point
+      - menu_id
+      - name
+      - name_en
+      - sku
+      - updated_at
+      filter: {}
+- table:
+    schema: public
+    name: questions
+  array_relationships:
+  - name: answers
+    using:
+      foreign_key_constraint_on:
+        column: question_id
+        table:
+          schema: public
+          name: answers
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - title
+      filter:
+        is_active:
+          _eq: true
+- table:
+    schema: public
+    name: rank_histories
+- table:
+    schema: public
+    name: ranks
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - from_point
+      - id
+      - to_point
+      filter: {}
+- table:
+    schema: public
+    name: restaurant_images
+  select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+      - id
+      - restaurant_id
+      - image
+      filter: {}
+  - role: user
+    permission:
+      columns:
+      - id
+      - restaurant_id
+      - image
+      filter: {}
+- table:
+    schema: public
+    name: restaurant_open_times
+  object_relationships:
+  - name: restaurant
+    using:
+      foreign_key_constraint_on: restaurant_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - close_time
+      - day_of_week
+      - open_time
+      - restaurant_id
+      filter: {}
+- table:
+    schema: public
+    name: restaurant_types
+  is_enum: true
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: restaurants
+  array_relationships:
+  - name: checkins
+    using:
+      foreign_key_constraint_on:
+        column: restaurant_id
+        table:
+          schema: public
+          name: checkins
+  - name: images
+    using:
+      foreign_key_constraint_on:
+        column: restaurant_id
+        table:
+          schema: public
+          name: restaurant_images
+  - name: open_times
+    using:
+      foreign_key_constraint_on:
+        column: restaurant_id
+        table:
+          schema: public
+          name: restaurant_open_times
+  select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+      - access
+      - address
+      - id
+      - location
+      - name
+      - note
+      - phone_number
+      - reserve
+      - user_eats_uri
+      filter: {}
+  - role: user
+    permission:
+      columns:
+      - access
+      - address
+      - business_types
+      - created_at
+      - id
+      - location
+      - name
+      - note
+      - phone_number
+      - reserve
+      - updated_at
+      - user_eats_uri
+      filter: {}
+- table:
+    schema: public
+    name: roles
+  is_enum: true
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: rollbacks
+  object_relationships:
+  - name: point_transaction
+    using:
+      foreign_key_constraint_on: point_transaction_id
+  - name: rank_history
+    using:
+      foreign_key_constraint_on: rank_history_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      - user_id
+      - rank_history_id
+      - point_transaction_id
+      - created_at
+      filter:
+        user_id:
+          _eq: X-Hasura-User-Id
+- table:
+    schema: public
+    name: transaction_type
+  is_enum: true
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - id
+      filter: {}
+- table:
+    schema: public
+    name: users
+  object_relationships:
+  - name: gender
+    using:
+      foreign_key_constraint_on: gender_id
+  - name: point
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: points
+        column_mapping:
+          id: user_id
+  - name: rank
+    using:
+      foreign_key_constraint_on: rank_id
+  - name: role
+    using:
+      foreign_key_constraint_on: role_id
+  array_relationships:
+  - name: checkins
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: public
+          name: checkins
+  - name: exchanges
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: public
+          name: exchanges
+  - name: point_transactions
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: public
+          name: point_transactions
+  - name: rank_histories
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: public
+          name: rank_histories
+  - name: rollbacks
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: public
+          name: rollbacks
+  select_permissions:
+  - role: user
+    permission:
+      columns:
+      - birthdate
+      - created_at
+      - email
+      - gender_id
+      - id
+      - name
+      - rank_id
+      - restaurant_id
+      - role_id
+      - updated_at
+      filter:
+        id:
+          _eq: X-Hasura-User-Id
+  event_triggers:
+  - name: give_away_point_when_register
+    definition:
+      enable_manual: false
+      insert:
+        columns: '*'
+    retry_conf:
+      num_retries: 3
+      interval_sec: 60
+      timeout_sec: 60
+    webhook_from_env: FUNCTIONS_URL
+  - name: send_email_welcome
+    definition:
+      enable_manual: true
+      insert:
+        columns: '*'
+      update:
+        columns:
+        - birthdate
+        - email
+        - gender_id
+        - name
+    retry_conf:
+      num_retries: 2
+      interval_sec: 10
+      timeout_sec: 60
+    webhook_from_env: FUNCTIONS_URL

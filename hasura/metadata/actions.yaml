@@ -1,0 +1,151 @@
+actions:
+  - name: checkin
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: collectPoint
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: doCheckin
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: doExchanges
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: getBenefitUsed
+    definition:
+      kind: ""
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: getCheckin
+    definition:
+      kind: ""
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: getPointExpire
+    definition:
+      kind: ""
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: staffCreateQrcode
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: anonymous
+  - name: staffLogin
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: anonymous
+  - name: syncMe
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: upAmbassador
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+  - name: deleteUser
+    definition:
+      kind: synchronous
+      handler: "{{FUNCTIONS_URL}}"
+    permissions:
+      - role: user
+custom_types:
+  enums:
+    - name: ExchangeType
+      values:
+        - description: null
+          is_deprecated: null
+          value: POINT
+        - description: null
+          is_deprecated: null
+          value: AMBASSADOR
+        - description: null
+          is_deprecated: null
+          value: INSTALL
+        - description: null
+          is_deprecated: null
+          value: BONUS_INSTALL
+  input_objects:
+    - name: CheckinInput
+    - name: SampleInput
+    - name: ExchangeInput
+    - name: DoCheckinInput
+  objects:
+    - name: SyncMeOutput
+      relationships:
+        - remote_table:
+            schema: public
+            name: users
+          name: me
+          type: object
+          field_mapping:
+            user_id: id
+    - name: CheckinOutput
+    - name: GetCheckinOutput
+    - name: ExchangeOutput
+      relationships:
+        - remote_table:
+            schema: public
+            name: exchanges
+          name: exchange
+          type: object
+          field_mapping:
+            exchange_id: id
+    - name: UpAmbassadorOutput
+    - name: DoExchangesOutput
+    - name: SampleOutput
+    - name: doExchangesOutput
+      relationships:
+        - remote_table:
+            schema: public
+            name: exchanges
+          name: data
+          type: object
+          field_mapping:
+            exchange_id: id
+    - name: QrcodeOutput
+      relationships:
+        - remote_table:
+            schema: public
+            name: point_shares
+          name: data
+          type: object
+          field_mapping:
+            point_shares_id: id
+    - name: CollectPointOutput
+      relationships:
+        - remote_table:
+            schema: public
+            name: point_collects
+          name: data
+          type: object
+          field_mapping:
+            point_collects_id: id
+    - name: StaffLoginOutput
+    - name: PointExpireOutput
+    - name: DoCheckinOutput
+    - name: AmbassadorOutput
+    - name: BenefitOutput
+  scalars: []

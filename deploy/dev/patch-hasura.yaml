@@ -1,0 +1,8 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hasura
+  labels:
+    app: hasura
+  annotations:
+    custom-hostname: api-loyalty

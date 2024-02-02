@@ -1,0 +1,156 @@
+type Mutation {
+  checkin(checkinInput: CheckinInput!): CheckinOutput
+}
+
+type Mutation {
+  collectPoint(point_shares_id: uuid!, point: Int!): CollectPointOutput
+}
+
+type Mutation {
+  doCheckin(checkinInput: DoCheckinInput!): DoCheckinOutput
+}
+
+type Mutation {
+  doExchanges(
+    exchangeInputs: [ExchangeInput!]!
+    restaurant_id: uuid!
+  ): doExchangesOutput
+}
+
+type Query {
+  getBenefitUsed: BenefitOutput
+}
+
+type Query {
+  getCheckin(restaurant_id: uuid!): GetCheckinOutput
+}
+
+type Query {
+  getPointExpire: PointExpireOutput
+}
+
+type Mutation {
+  staffCreateQrcode(points: Int!): QrcodeOutput
+}
+
+type Mutation {
+  staffLogin(pin: Int!): StaffLoginOutput
+}
+
+type Mutation {
+  syncMe: SyncMeOutput
+}
+
+type Mutation {
+  upAmbassador: UpAmbassadorOutput!
+}
+
+type Mutation {
+  deleteUser(user_id: String!): deleteUserOutput!
+}
+
+enum ExchangeType {
+  POINT
+  AMBASSADOR
+  INSTALL
+  BONUS_INSTALL
+}
+
+input CheckinInput {
+  restaurant_id: String!
+  lon: Float!
+  lat: Float!
+}
+
+input SampleInput {
+  username: String!
+  password: String!
+}
+
+input ExchangeInput {
+  product_id: uuid!
+  exchange_type: ExchangeType!
+  amount: Int!
+}
+
+input DoCheckinInput {
+  restaurant_id: String!
+  lon: Float!
+  lat: Float!
+}
+
+type SyncMeOutput {
+  updated_at: timestamptz!
+  user_id: String!
+}
+
+type CheckinOutput {
+  is_checkin: Boolean!
+}
+
+type GetCheckinOutput {
+  is_today_checkin: Boolean!
+  point: Int!
+}
+
+type ExchangeOutput {
+  exchange_id: uuid!
+}
+
+type UpAmbassadorOutput {
+  current_rank_id: String!
+  is_upgrade: Boolean!
+}
+
+type deleteUserOutput {
+  user_id: String!
+}
+
+type DoExchangesOutput {
+  exchange_id: uuid!
+}
+
+type SampleOutput {
+  accessToken: String!
+}
+
+type doExchangesOutput {
+  exchange_id: uuid!
+}
+
+type QrcodeOutput {
+  point_shares_id: uuid!
+  points: Int!
+}
+
+type CollectPointOutput {
+  point_collects_id: uuid!
+  balance: Int!
+  points: Int!
+}
+
+type StaffLoginOutput {
+  token: String!
+}
+
+type PointExpireOutput {
+  expired_at: timestamptz!
+  is_expired: Boolean!
+}
+
+type DoCheckinOutput {
+  amount: Int!
+  created_at: timestamptz!
+}
+
+type AmbassadorOutput {
+  can_get_ambassador_benefit: Boolean
+  can_show_test: Boolean
+}
+
+type BenefitOutput {
+  can_get_ambassador_benefit: Boolean
+  can_get_install_benefit: Boolean
+  can_get_bonus_install_benefit: Boolean
+  can_show_test: Boolean
+}

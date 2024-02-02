@@ -1,0 +1,64 @@
+bases:
+  - ../base
+
+resources:
+  - ./namespace.yaml
+
+namespace: dev
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+  - name: hasura-secrets
+    behavior: merge
+    literals:
+      - HASURA_GRAPHQL_DATABASE_URL=<HASURA_GRAPHQL_DATABASE_URL>
+      - HASURA_GRAPHQL_ADMIN_SECRET=<HASURA_GRAPHQL_ADMIN_SECRET>
+      - HASURA_GRAPHQL_JWT_SECRET=<HASURA_GRAPHQL_JWT_SECRET>
+  - name: aws-credentials
+    behavior: merge
+    files:
+      - ./credentials
+
+configMapGenerator:
+  - name: hasura-configs
+    behavior: merge
+    literals:
+      - FUNCTIONS_URL=http://functions.dev.svc.cluster.local
+      - HASURA_GRAPHQL_DEV_MODE=true
+      - HASURA_GRAPHQL_URL=<HASURA_GRAPHQL_URL>
+  - name: loyalty-configs
+    behavior: merge
+    literals:
+      - AWS_REGION=ap-northeast-1
+      - AWS_USER_POOL_ID=ap-northeast-1_fuQs1Q76i
+      - POINT_GIVEAWAY_INSTALL=5
+      - NUM_DAYS_TO_RECOVERY_GIVEAWAY=2
+      - NUM_DAYS_TO_ROLLBACK_RANK=2
+      - POINT_CHECKIN=1
+      - LAMBDA_FUNC_SEND_EMAIL_WELCOME=loyalty-lambda-post-confirmation-stg
+  - name: app-links
+    behavior: merge
+    files:
+      - ./app-links/apple-app-site-association
+      - ./app-links/assetlinks.json
+
+  # - name: storage-configs
+  #   behavior: merge
+  #   literals:
+  #     - STORAGE_ENDPOINT=<STORAGE_ENDPOINT>
+  #     - STORAGE_BUCKET_NAME=<STORAGE_BUCKET_NAME>
+  #     - STORAGE_ACCESS_KEY=<STORAGE_ACCESS_KEY>
+  #     - STORAGE_SECRET_KEY=<STORAGE_SECRET_KEY>
+
+images:
+  - name: functions
+    newName: <FUNCTIONS_IMAGE>
+    newTag: <FUNCTIONS_TAG>
+  - name: app
+    newName: <APP_IMAGE>
+    newTag: <APP_TAG>
+    
+# patchesStrategicMerge:
+#   - ./patch-hasura.yaml

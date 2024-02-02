@@ -1,0 +1,22 @@
+resources:
+- ./service.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+  - name: hasura-secrets
+    literals:
+      - HASURA_GRAPHQL_DATABASE_URL=
+      - HASURA_GRAPHQL_ADMIN_SECRET=
+      - HASURA_GRAPHQL_JWT_SECRET=
+configMapGenerator:
+  - name: hasura-configs
+    literals:
+      - HASURA_GRAPHQL_UNAUTHORIZED_ROLE=anonymous
+      - HASURA_GRAPHQL_TX_ISOLATION=serializable
+      - FUNCTIONS_URL=
+      - HASURA_GRAPHQL_ENABLE_CONSOLE=false
+      - HASURA_GRAPHQL_ENABLE_TELEMETRY=false
+      - HASURA_GRAPHQL_DEV_MODE=true
+      - HASURA_GRAPHQL_URL=

@@ -1,0 +1,7 @@
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 0, '11:30:00+09', '23:30:00+09', '3c63a809-b4bd-4d1c-99af-87fff694ae1e');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 1, '11:30:00+09', '23:30:00+09', '20978d2a-bf11-4755-ac4d-097f811fa295');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 2, '11:30:00+09', '23:30:00+09', '675eeafc-a325-48c1-a9a1-d54e1ade8616');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 3, '11:30:00+09', '23:30:00+09', '78f1f95f-0c85-4fdd-bbd2-369d1360fc84');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 4, '11:30:00+09', '23:30:00+09', 'd3f54d6c-c3cd-4145-b917-ce15cddf87c2');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 5, '11:30:00+09', '23:30:00+09', 'ea34638e-7012-4357-b04d-e1c72371d122');
+INSERT INTO public.restaurant_open_times (restaurant_id, day_of_week, open_time, close_time, id) VALUES ('e5bc6bb3-3f1c-4934-94f4-9faceffbc6f9', 6, '11:30:00+09', '23:30:00+09', '8a0f7427-1683-4657-8487-8fdba72ff81b');

@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "kaiser-kitchen/loyalty-point-backend",
+  "pipelineDirectory": "loyalty-point-backend",
+  "workspaceDirectory": "loyalty-point-backend/loyalty-point-backend",
+  "repositories": {
+    "kaiser-kitchen/loyalty-point-backend": {
+      "repositoryPath": "loyalty-point-backend/loyalty-point-backend",
+      "lastRunOn": "09/18/2023 10:36:55 +08:00"
+    }
+  },
+  "lastRunOn": "09/18/2023 10:36:55 +08:00"
+}

@@ -1,0 +1,1 @@
+DROP INDEX restaurants_location_idx;

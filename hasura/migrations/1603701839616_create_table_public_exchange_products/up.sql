@@ -1,0 +1,2 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE TABLE "public"."exchange_products"("id" uuid NOT NULL DEFAULT gen_random_uuid(), "exchange_id" uuid NOT NULL, "product_id" uuid NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), "extras" jsonb, PRIMARY KEY ("id") , FOREIGN KEY ("exchange_id") REFERENCES "public"."exchanges"("id") ON UPDATE restrict ON DELETE cascade, FOREIGN KEY ("product_id") REFERENCES "public"."products"("id") ON UPDATE restrict ON DELETE restrict, UNIQUE ("id", "exchange_id", "product_id"));

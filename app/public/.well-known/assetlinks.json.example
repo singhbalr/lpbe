@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.schmatz_client",
+      "sha256_cert_fingerprints": [
+        "E5:88:E9:10:C3:52:9E:25:10:D2:61:48:D0:71:D6:D8:9C:6B:C2:5F:CF:86:94:4A:08:E3:D9:0B:B1:F5:1F:78"
+      ]
+    }
+  }
+]

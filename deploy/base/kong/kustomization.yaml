@@ -1,0 +1,4 @@
+resources:
+- ./global-rate-limiting.yaml
+- ./global-request-size-limiting.yaml
+- ./local-rate-limiting.yaml
